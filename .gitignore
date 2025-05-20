@@ -1,0 +1,14 @@
+.vs/
+bin/
+obj/
+*.log
+*.user
+*.suo
+*.tmp
+*.cache
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.bak
+*.old
+*.swp
