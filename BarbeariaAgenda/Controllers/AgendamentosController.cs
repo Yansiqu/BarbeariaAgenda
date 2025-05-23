@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BarbeariaAgenda.Models;
+using BarbeariaAgenda.Data;
+
 
 namespace BarbeariaAgenda.Controllers
 {

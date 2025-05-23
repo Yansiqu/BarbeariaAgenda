@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BarbeariaAgenda.Models
 {
@@ -9,9 +11,12 @@ namespace BarbeariaAgenda.Models
         [Required]
         public DateTime DataHora { get; set; }
 
-        // Torna o tipo 'Barbeiro' anulável
-        public Barbeiro? Barbeiro { get; set; }
+        [Required]
+        public int BarbeiroId { get; set; } 
 
-        // Pode adicionar outras propriedades conforme necessário
+        [ForeignKey("BarbeiroId")]
+        public Barbeiro? Barbeiro { get; set; }
     }
 }
+
+
