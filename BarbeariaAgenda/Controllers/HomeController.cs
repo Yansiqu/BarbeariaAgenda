@@ -1,6 +1,12 @@
-﻿namespace BarbeariaAgenda.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace BarbeariaAgenda.Controllers
 {
-    public class Class
+    public class HomeController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }

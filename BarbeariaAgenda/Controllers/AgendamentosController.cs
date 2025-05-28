@@ -1,16 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BarbeariaAgenda.Models;
-using BarbeariaAgenda.Data;
-
 
 namespace BarbeariaAgenda.Controllers
 {
     public class AgendamentosController : Controller
     {
-        private readonly BarbeariaContext _context;
+        private readonly AppDbContext _context;
 
-        public AgendamentosController(BarbeariaContext context)
+        public AgendamentosController(AppDbContext context)
         {
             _context = context;
         }
